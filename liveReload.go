@@ -41,6 +41,7 @@ func checkIfUpdated(w http.ResponseWriter, r *http.Request) {
   if (dirUpdated == 1) {
     dirUpdated = 0
   }
+  w.Header().Set("Access-Control-Allow-Origin", "*")
   w.Write([]byte(message))
 }
 
