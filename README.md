@@ -2,6 +2,7 @@
 Golang liveReload for frontend development. Usage: ./liveReload [path] [port]
 
 ## Frontend code
+```
 // liveReload poller begin
 const poller = setInterval(() => {
     fetch('http://127.0.0.1:15555', {mode: 'cors'}).then(res => res.text().then(text => {
@@ -13,3 +14,4 @@ const poller = setInterval(() => {
     });
 }, 1000);
 // liveReload poller end
+```
